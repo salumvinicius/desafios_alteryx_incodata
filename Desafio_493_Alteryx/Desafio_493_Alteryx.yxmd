@@ -1,0 +1,1633 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="64" y="131" width="648" height="143" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>The Golden Rectangle is often considered one of the most aesthetically pleasing shapes in art and architecture. This proportion appears in famous works such as the Mona Lisa and the Parthenon. In this challenge, your goal is to analyze a dataset of rectangles and identify those that most closely match the Golden Ratio.
+
+Tasks
+1. Calculate the ratio (longer side divided by shorter side) for each rectangle in the dataset.
+2. Identify the top 4 rectangles whose ratios are closest to the Golden Ratio (approximately 1.618).</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor r="37" g="45" b="57" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="130" y="76" width="1050" height="35" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #493: The Golden Rectangle Ratio</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor r="37" g="45" b="57" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="64" y="65" width="55" height="55" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor r="37" g="45" b="57" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="130" y="54" width="145" height="25" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Alteryx Academy</Text>
+          <Font name="Arial" size="12" style="0" />
+          <TextColor r="23" g="28" b="63" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="282" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Length] / [Width]" field="Ratio" size="8" type="Double" enabled="true" />
+            <FormulaField expression="ABS([Ratio] - 1.618)" field="Diff" size="8" type="Double" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Ratio = [Length] / [Width]
+Diff = ABS([Ratio] - 1.618)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="390" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1046">
+            <Field field="Diff" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Diff - Crescente</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="486" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>4</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Primeiras 4 linhas</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="582" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Diff" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="678" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Incodata\AppData\Local\Temp\Engine_8112_e82aee5bb3ae4e43a9e25d71ee3bbed6_\Engine_8112_ad0428fc3df34baaaa6b69413488b015~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Perfil</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="405" width="189" height="103" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Start Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffffff" BorderColor="#cdd7da" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Start Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="174" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Incodata\AppData\Local\Temp\Engine_8112_e82aee5bb3ae4e43a9e25d71ee3bbed6_\Engine_8112_cd92b81fe676480f968cb17d65f6b7ce~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="64" y="439" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="100" />
+              <Fields>
+                <Field name="ID" />
+                <Field name="Length" />
+                <Field name="Width" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>34.99</c>
+                  <c>21.85</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>77.36</c>
+                  <c>47.78</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>61.06</c>
+                  <c>37.94</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>51.59</c>
+                  <c>31.94</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>19.56</c>
+                  <c>12.02</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>19.32</c>
+                  <c>12.02</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>12.28</c>
+                  <c>7.61</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>71.36</c>
+                  <c>43.98</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>51.5</c>
+                  <c>32.05</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>59.07</c>
+                  <c>36.86</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>9.53</c>
+                  <c>5.93</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>78.07</c>
+                  <c>48.65</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>69.12</c>
+                  <c>42.46</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>23.64</c>
+                  <c>14.56</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>21.34</c>
+                  <c>13.18</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>21.55</c>
+                  <c>13.25</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>30.36</c>
+                  <c>18.69</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>45.94</c>
+                  <c>28.61</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>39.75</c>
+                  <c>24.44</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>29.26</c>
+                  <c>18.11</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>52.84</c>
+                  <c>32.53</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>18.35</c>
+                  <c>11.28</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>29.21</c>
+                  <c>18.15</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>34.45</c>
+                  <c>21.49</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>41.01</c>
+                  <c>25.52</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>65.05</c>
+                  <c>40.33</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>22.72</c>
+                  <c>13.99</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>45.75</c>
+                  <c>28.14</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>50.66</c>
+                  <c>31.66</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>11.45</c>
+                  <c>7.09</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>52.15</c>
+                  <c>32.34</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>20.36</c>
+                  <c>12.67</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>12.71</c>
+                  <c>7.93</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>76.8</c>
+                  <c>47.7</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>78.9</c>
+                  <c>48.45</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>66.61</c>
+                  <c>41.38</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>30.22</c>
+                  <c>18.71</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>15.23</c>
+                  <c>9.4</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>57.66</c>
+                  <c>35.79</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>40.41</c>
+                  <c>24.81</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>17.09</c>
+                  <c>10.49</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>43.86</c>
+                  <c>27.28</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>10.57</c>
+                  <c>6.55</c>
+                </r>
+                <r>
+                  <c>44</c>
+                  <c>73.89</c>
+                  <c>45.92</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>26.77</c>
+                  <c>16.65</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>55.74</c>
+                  <c>34.81</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>30.79</c>
+                  <c>19.03</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>45.87</c>
+                  <c>28.4</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>47.41</c>
+                  <c>29.6</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>21.42</c>
+                  <c>13.32</c>
+                </r>
+                <r>
+                  <c>51</c>
+                  <c>79.14</c>
+                  <c>48.63</c>
+                </r>
+                <r>
+                  <c>52</c>
+                  <c>64.1</c>
+                  <c>39.88</c>
+                </r>
+                <r>
+                  <c>53</c>
+                  <c>75.85</c>
+                  <c>47.28</c>
+                </r>
+                <r>
+                  <c>54</c>
+                  <c>73.09</c>
+                  <c>45.27</c>
+                </r>
+                <r>
+                  <c>55</c>
+                  <c>51.99</c>
+                  <c>31.91</c>
+                </r>
+                <r>
+                  <c>56</c>
+                  <c>74.71</c>
+                  <c>46.48</c>
+                </r>
+                <r>
+                  <c>57</c>
+                  <c>14.55</c>
+                  <c>8.98</c>
+                </r>
+                <r>
+                  <c>58</c>
+                  <c>22.43</c>
+                  <c>13.82</c>
+                </r>
+                <r>
+                  <c>59</c>
+                  <c>11.31</c>
+                  <c>7.04</c>
+                </r>
+                <r>
+                  <c>60</c>
+                  <c>31.85</c>
+                  <c>19.64</c>
+                </r>
+                <r>
+                  <c>61</c>
+                  <c>36.23</c>
+                  <c>22.49</c>
+                </r>
+                <r>
+                  <c>62</c>
+                  <c>27.86</c>
+                  <c>17.21</c>
+                </r>
+                <r>
+                  <c>63</c>
+                  <c>68.47</c>
+                  <c>42.29</c>
+                </r>
+                <r>
+                  <c>64</c>
+                  <c>34.02</c>
+                  <c>21.05</c>
+                </r>
+                <r>
+                  <c>65</c>
+                  <c>28.28</c>
+                  <c>17.64</c>
+                </r>
+                <r>
+                  <c>66</c>
+                  <c>47.81</c>
+                  <c>29.42</c>
+                </r>
+                <r>
+                  <c>67</c>
+                  <c>18.26</c>
+                  <c>11.34</c>
+                </r>
+                <r>
+                  <c>68</c>
+                  <c>65.99</c>
+                  <c>41.1</c>
+                </r>
+                <r>
+                  <c>69</c>
+                  <c>13.38</c>
+                  <c>8.35</c>
+                </r>
+                <r>
+                  <c>70</c>
+                  <c>79.93</c>
+                  <c>49.41</c>
+                </r>
+                <r>
+                  <c>71</c>
+                  <c>64.41</c>
+                  <c>39.75</c>
+                </r>
+                <r>
+                  <c>72</c>
+                  <c>22.31</c>
+                  <c>13.94</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>8.48</c>
+                  <c>5.25</c>
+                </r>
+                <r>
+                  <c>74</c>
+                  <c>67</c>
+                  <c>41.7</c>
+                </r>
+                <r>
+                  <c>75</c>
+                  <c>59.61</c>
+                  <c>36.81</c>
+                </r>
+                <r>
+                  <c>76</c>
+                  <c>60.69</c>
+                  <c>37.81</c>
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>64.35</c>
+                  <c>39.71</c>
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>13.43</c>
+                  <c>8.33</c>
+                </r>
+                <r>
+                  <c>79</c>
+                  <c>34.4</c>
+                  <c>21.13</c>
+                </r>
+                <r>
+                  <c>80</c>
+                  <c>16.38</c>
+                  <c>10.21</c>
+                </r>
+                <r>
+                  <c>81</c>
+                  <c>70.59</c>
+                  <c>43.84</c>
+                </r>
+                <r>
+                  <c>82</c>
+                  <c>52.99</c>
+                  <c>33.05</c>
+                </r>
+                <r>
+                  <c>83</c>
+                  <c>32.38</c>
+                  <c>19.89</c>
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>12.78</c>
+                  <c>7.86</c>
+                </r>
+                <r>
+                  <c>85</c>
+                  <c>30.54</c>
+                  <c>18.99</c>
+                </r>
+                <r>
+                  <c>86</c>
+                  <c>31.8</c>
+                  <c>19.63</c>
+                </r>
+                <r>
+                  <c>87</c>
+                  <c>61.46</c>
+                  <c>37.83</c>
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>54.47</c>
+                  <c>33.69</c>
+                </r>
+                <r>
+                  <c>89</c>
+                  <c>72.59</c>
+                  <c>44.92</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>42.19</c>
+                  <c>26.25</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>16.64</c>
+                  <c>10.38</c>
+                </r>
+                <r>
+                  <c>92</c>
+                  <c>60.35</c>
+                  <c>37.1</c>
+                </r>
+                <r>
+                  <c>93</c>
+                  <c>63.84</c>
+                  <c>39.24</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>48.99</c>
+                  <c>30.26</c>
+                </r>
+                <r>
+                  <c>95</c>
+                  <c>63.91</c>
+                  <c>39.69</c>
+                </r>
+                <r>
+                  <c>96</c>
+                  <c>43.84</c>
+                  <c>27.22</c>
+                </r>
+                <r>
+                  <c>97</c>
+                  <c>46.26</c>
+                  <c>28.52</c>
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>39.44</c>
+                  <c>24.24</c>
+                </r>
+                <r>
+                  <c>99</c>
+                  <c>9.99</c>
+                  <c>6.14</c>
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>16</c>
+                  <c>9.86</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="65" y="724" width="656" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Alteryx Educational Asset - Terms and Conditions</Caption>
+          <Style TextColor="#ffffff" FillColor="#4c6778" BorderColor="#00263e" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="75" y="758" width="636" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Use of this Alteryx asset is for educational purposes only and bound by the conditions set forth on alteryx.com/terms-and-conditions. Alteryx Information may not be reproduced, transmitted or distributed without Alteryx, Inc.'s permission.</Text>
+              <Font name="Corbel" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="967" y="92" width="200" height="223" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output
+Solution</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffffff" BorderColor="#cdd7da" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output
+Solution</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="977" y="230" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="4" />
+              <Fields>
+                <Field name="ID" />
+                <Field name="Length" />
+                <Field name="Width" />
+                <Field name="Ratio" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>70</c>
+                  <c>79.93</c>
+                  <c>49.41</c>
+                  <c>1.61768872697834</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>30.79</c>
+                  <c>19.03</c>
+                  <c>1.61797162375197</c>
+                </r>
+                <r>
+                  <c>62</c>
+                  <c>27.86</c>
+                  <c>17.21</c>
+                  <c>1.61882626380012</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>48.99</c>
+                  <c>30.26</c>
+                  <c>1.61896893588896</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Task 2</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="977" y="142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="100" />
+              <Fields>
+                <Field name="ID" />
+                <Field name="Length" />
+                <Field name="Width" />
+                <Field name="Ratio" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>34.99</c>
+                  <c>21.85</c>
+                  <c>1.60137299771167</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>77.36</c>
+                  <c>47.78</c>
+                  <c>1.61908748430306</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>61.06</c>
+                  <c>37.94</c>
+                  <c>1.60938323668951</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>51.59</c>
+                  <c>31.94</c>
+                  <c>1.61521603005636</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>19.56</c>
+                  <c>12.02</c>
+                  <c>1.62728785357737</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>19.32</c>
+                  <c>12.02</c>
+                  <c>1.60732113144759</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>12.28</c>
+                  <c>7.61</c>
+                  <c>1.61366622864652</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>71.36</c>
+                  <c>43.98</c>
+                  <c>1.62255570713961</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>51.5</c>
+                  <c>32.05</c>
+                  <c>1.60686427457098</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>59.07</c>
+                  <c>36.86</c>
+                  <c>1.60255018990776</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>9.53</c>
+                  <c>5.93</c>
+                  <c>1.6070826306914</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>78.07</c>
+                  <c>48.65</c>
+                  <c>1.60472764645427</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>69.12</c>
+                  <c>42.46</c>
+                  <c>1.62788506829958</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>23.64</c>
+                  <c>14.56</c>
+                  <c>1.62362637362637</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>21.34</c>
+                  <c>13.18</c>
+                  <c>1.61911987860395</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>21.55</c>
+                  <c>13.25</c>
+                  <c>1.62641509433962</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>30.36</c>
+                  <c>18.69</c>
+                  <c>1.62439807383628</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>45.94</c>
+                  <c>28.61</c>
+                  <c>1.60573226144705</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>39.75</c>
+                  <c>24.44</c>
+                  <c>1.62643207855974</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>29.26</c>
+                  <c>18.11</c>
+                  <c>1.61568194367753</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>52.84</c>
+                  <c>32.53</c>
+                  <c>1.62434675683984</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>18.35</c>
+                  <c>11.28</c>
+                  <c>1.62677304964539</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>29.21</c>
+                  <c>18.15</c>
+                  <c>1.60936639118457</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>34.45</c>
+                  <c>21.49</c>
+                  <c>1.60307119590507</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>41.01</c>
+                  <c>25.52</c>
+                  <c>1.60697492163009</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>65.05</c>
+                  <c>40.33</c>
+                  <c>1.61294321844781</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>22.72</c>
+                  <c>13.99</c>
+                  <c>1.62401715511079</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>45.75</c>
+                  <c>28.14</c>
+                  <c>1.62579957356077</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>50.66</c>
+                  <c>31.66</c>
+                  <c>1.60012634238787</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>11.45</c>
+                  <c>7.09</c>
+                  <c>1.61495063469676</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>52.15</c>
+                  <c>32.34</c>
+                  <c>1.61255411255411</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>20.36</c>
+                  <c>12.67</c>
+                  <c>1.6069455406472</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>12.71</c>
+                  <c>7.93</c>
+                  <c>1.60277427490542</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>76.8</c>
+                  <c>47.7</c>
+                  <c>1.61006289308176</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>78.9</c>
+                  <c>48.45</c>
+                  <c>1.62848297213622</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>66.61</c>
+                  <c>41.38</c>
+                  <c>1.60971483808603</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>30.22</c>
+                  <c>18.71</c>
+                  <c>1.61517904863709</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>15.23</c>
+                  <c>9.4</c>
+                  <c>1.62021276595745</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>57.66</c>
+                  <c>35.79</c>
+                  <c>1.61106454316848</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>40.41</c>
+                  <c>24.81</c>
+                  <c>1.62877871825877</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>17.09</c>
+                  <c>10.49</c>
+                  <c>1.62917063870353</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>43.86</c>
+                  <c>27.28</c>
+                  <c>1.60777126099707</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>10.57</c>
+                  <c>6.55</c>
+                  <c>1.61374045801527</c>
+                </r>
+                <r>
+                  <c>44</c>
+                  <c>73.89</c>
+                  <c>45.92</c>
+                  <c>1.60910278745645</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>26.77</c>
+                  <c>16.65</c>
+                  <c>1.60780780780781</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>55.74</c>
+                  <c>34.81</c>
+                  <c>1.60126400459638</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>30.79</c>
+                  <c>19.03</c>
+                  <c>1.61797162375197</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>45.87</c>
+                  <c>28.4</c>
+                  <c>1.61514084507042</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>47.41</c>
+                  <c>29.6</c>
+                  <c>1.60168918918919</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>21.42</c>
+                  <c>13.32</c>
+                  <c>1.60810810810811</c>
+                </r>
+                <r>
+                  <c>51</c>
+                  <c>79.14</c>
+                  <c>48.63</c>
+                  <c>1.62739049969155</c>
+                </r>
+                <r>
+                  <c>52</c>
+                  <c>64.1</c>
+                  <c>39.88</c>
+                  <c>1.60732196589769</c>
+                </r>
+                <r>
+                  <c>53</c>
+                  <c>75.85</c>
+                  <c>47.28</c>
+                  <c>1.60427241962775</c>
+                </r>
+                <r>
+                  <c>54</c>
+                  <c>73.09</c>
+                  <c>45.27</c>
+                  <c>1.61453501214933</c>
+                </r>
+                <r>
+                  <c>55</c>
+                  <c>51.99</c>
+                  <c>31.91</c>
+                  <c>1.62926982137261</c>
+                </r>
+                <r>
+                  <c>56</c>
+                  <c>74.71</c>
+                  <c>46.48</c>
+                  <c>1.60735800344234</c>
+                </r>
+                <r>
+                  <c>57</c>
+                  <c>14.55</c>
+                  <c>8.98</c>
+                  <c>1.62026726057906</c>
+                </r>
+                <r>
+                  <c>58</c>
+                  <c>22.43</c>
+                  <c>13.82</c>
+                  <c>1.62301013024602</c>
+                </r>
+                <r>
+                  <c>59</c>
+                  <c>11.31</c>
+                  <c>7.04</c>
+                  <c>1.60653409090909</c>
+                </r>
+                <r>
+                  <c>60</c>
+                  <c>31.85</c>
+                  <c>19.64</c>
+                  <c>1.62169042769857</c>
+                </r>
+                <r>
+                  <c>61</c>
+                  <c>36.23</c>
+                  <c>22.49</c>
+                  <c>1.61093819475322</c>
+                </r>
+                <r>
+                  <c>62</c>
+                  <c>27.86</c>
+                  <c>17.21</c>
+                  <c>1.61882626380012</c>
+                </r>
+                <r>
+                  <c>63</c>
+                  <c>68.47</c>
+                  <c>42.29</c>
+                  <c>1.61905887916765</c>
+                </r>
+                <r>
+                  <c>64</c>
+                  <c>34.02</c>
+                  <c>21.05</c>
+                  <c>1.61615201900238</c>
+                </r>
+                <r>
+                  <c>65</c>
+                  <c>28.28</c>
+                  <c>17.64</c>
+                  <c>1.6031746031746</c>
+                </r>
+                <r>
+                  <c>66</c>
+                  <c>47.81</c>
+                  <c>29.42</c>
+                  <c>1.62508497620666</c>
+                </r>
+                <r>
+                  <c>67</c>
+                  <c>18.26</c>
+                  <c>11.34</c>
+                  <c>1.61022927689594</c>
+                </r>
+                <r>
+                  <c>68</c>
+                  <c>65.99</c>
+                  <c>41.1</c>
+                  <c>1.60559610705596</c>
+                </r>
+                <r>
+                  <c>69</c>
+                  <c>13.38</c>
+                  <c>8.35</c>
+                  <c>1.60239520958084</c>
+                </r>
+                <r>
+                  <c>70</c>
+                  <c>79.93</c>
+                  <c>49.41</c>
+                  <c>1.61768872697834</c>
+                </r>
+                <r>
+                  <c>71</c>
+                  <c>64.41</c>
+                  <c>39.75</c>
+                  <c>1.62037735849057</c>
+                </r>
+                <r>
+                  <c>72</c>
+                  <c>22.31</c>
+                  <c>13.94</c>
+                  <c>1.60043041606887</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>8.48</c>
+                  <c>5.25</c>
+                  <c>1.6152380952381</c>
+                </r>
+                <r>
+                  <c>74</c>
+                  <c>67</c>
+                  <c>41.7</c>
+                  <c>1.60671462829736</c>
+                </r>
+                <r>
+                  <c>75</c>
+                  <c>59.61</c>
+                  <c>36.81</c>
+                  <c>1.61939690301548</c>
+                </r>
+                <r>
+                  <c>76</c>
+                  <c>60.69</c>
+                  <c>37.81</c>
+                  <c>1.60513091774663</c>
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>64.35</c>
+                  <c>39.71</c>
+                  <c>1.62049861495845</c>
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>13.43</c>
+                  <c>8.33</c>
+                  <c>1.61224489795918</c>
+                </r>
+                <r>
+                  <c>79</c>
+                  <c>34.4</c>
+                  <c>21.13</c>
+                  <c>1.6280170373876</c>
+                </r>
+                <r>
+                  <c>80</c>
+                  <c>16.38</c>
+                  <c>10.21</c>
+                  <c>1.60430950048972</c>
+                </r>
+                <r>
+                  <c>81</c>
+                  <c>70.59</c>
+                  <c>43.84</c>
+                  <c>1.61017335766423</c>
+                </r>
+                <r>
+                  <c>82</c>
+                  <c>52.99</c>
+                  <c>33.05</c>
+                  <c>1.60332829046899</c>
+                </r>
+                <r>
+                  <c>83</c>
+                  <c>32.38</c>
+                  <c>19.89</c>
+                  <c>1.6279537456008</c>
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>12.78</c>
+                  <c>7.86</c>
+                  <c>1.62595419847328</c>
+                </r>
+                <r>
+                  <c>85</c>
+                  <c>30.54</c>
+                  <c>18.99</c>
+                  <c>1.60821484992101</c>
+                </r>
+                <r>
+                  <c>86</c>
+                  <c>31.8</c>
+                  <c>19.63</c>
+                  <c>1.61996943453897</c>
+                </r>
+                <r>
+                  <c>87</c>
+                  <c>61.46</c>
+                  <c>37.83</c>
+                  <c>1.62463653185303</c>
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>54.47</c>
+                  <c>33.69</c>
+                  <c>1.61680023745919</c>
+                </r>
+                <r>
+                  <c>89</c>
+                  <c>72.59</c>
+                  <c>44.92</c>
+                  <c>1.6159839715049</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>42.19</c>
+                  <c>26.25</c>
+                  <c>1.6072380952381</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>16.64</c>
+                  <c>10.38</c>
+                  <c>1.60308285163776</c>
+                </r>
+                <r>
+                  <c>92</c>
+                  <c>60.35</c>
+                  <c>37.1</c>
+                  <c>1.6266846361186</c>
+                </r>
+                <r>
+                  <c>93</c>
+                  <c>63.84</c>
+                  <c>39.24</c>
+                  <c>1.62691131498471</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>48.99</c>
+                  <c>30.26</c>
+                  <c>1.61896893588896</c>
+                </r>
+                <r>
+                  <c>95</c>
+                  <c>63.91</c>
+                  <c>39.69</c>
+                  <c>1.61022927689594</c>
+                </r>
+                <r>
+                  <c>96</c>
+                  <c>43.84</c>
+                  <c>27.22</c>
+                  <c>1.61058045554739</c>
+                </r>
+                <r>
+                  <c>97</c>
+                  <c>46.26</c>
+                  <c>28.52</c>
+                  <c>1.62201963534362</c>
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>39.44</c>
+                  <c>24.24</c>
+                  <c>1.62706270627063</c>
+                </r>
+                <r>
+                  <c>99</c>
+                  <c>9.99</c>
+                  <c>6.14</c>
+                  <c>1.62703583061889</c>
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>16</c>
+                  <c>9.86</c>
+                  <c>1.62271805273834</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Task 1</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1098" y="142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\Incodata\AppData\Local\Temp\Engine_8112_e82aee5bb3ae4e43a9e25d71ee3bbed6_\Engine_8112_1c156bcdc3c140b68e85ea781242e86e~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1098" y="230" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\Incodata\AppData\Local\Temp\Engine_8112_e82aee5bb3ae4e43a9e25d71ee3bbed6_\Engine_8112_037759ed70f049b3ae419af7569e3b01~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="-4" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Desafio_493_Alteryx</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="fcdf4a13-1308-4c23-9a42-2ed82ef666af" />
+      <Telemetry>
+        <PreviousWorkflowId value="20032bd1-0a2b-42e7-8408-bc6145c407e8" />
+        <OriginWorkflowId value="b1ca98d8-103e-45ba-9754-ace1be29089c" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
